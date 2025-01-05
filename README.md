@@ -9,11 +9,12 @@ along with audio data to establish sequential relationships for predicting the p
 
 ## Repository Structure
 
--   Report.pdf - a concise and comprehensive report of our method and findings
--   data/ - a subdirectory containing all the data that was used for evaluating model performance along with the code that was used to generate the data
--   code/ - all code that was used for the evaluation scripts as well as code that was used for running the HuggingFace and OpenAI models
--   output/ - a subdirectory containing all models' raw outputs on the evaluation sets, along with the gold labels
+-   Report.pdf - a comprehensive report of our method and findings
+-   data_download.py - code that was used to download the data onto our local machines and drive
+-   process_and_predict.py - code that uses a TimeSformer model pretrained on the Kinetics-600 dataset and a VideoMAE model also pretrained on the Kinetics dataset to classify each 5-second segment with a token
+-   sound_processing.py - code that processes the audio data and associates each segment with a loudness value in decibels
+-   highlight_generator.py - contains the bulk of the code used to train the LSTM and generate video clips with the highlights
 
 ## Team Members
 
-John-Wesley Appleton, Tin Do, Edmund Doerksen, William Qi
+William Qi, Kyle Wu, Emmet Young
